@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brute Force Simulator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>🔓 Brute-Force Simulator</h1>
+        <p class="subtitle">Educational demonstration of sequential guessing attacks</p>
+
+        <div class="control-panel">
+            <label>Set Target Password (max 4 chars for demo):</label>
+            <input type="text" id="targetPassword" maxlength="4" placeholder="e.g. abc">
+            <button onclick="startAttack()" id="attackBtn">Start Simulation</button>
+        </div>
+
+        <div class="visualization">
+            <div class="status-box">
+                <p>Current Guess:</p>
+                <h2 id="currentGuess">---</h2>
+            </div>
+            <div class="stats-box">
+                <p>Attempts: <span id="attemptCount">0</span></p>
+                <p>Time Elapsed: <span id="timeElapsed">0.00s</span></p>
+                <p id="resultMessage"></p>
+            </div>
+        </div>
+
+        <div class="log-console" id="logConsole">
+            <div class="log-entry">> System Ready. Waiting for target...</div>
+        </div>
+    </div>
+
+    <script src="t3.js"></script>
+</body>
+</html>
