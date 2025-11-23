@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security Header Checker</title>
+    <style>
+        body { font-family: sans-serif; margin: 40px; }
+        input[type="text"] { width: 300px; padding: 8px; }
+        input[type="submit"] { padding: 8px 12px; }
+    </style>
+</head>
+<body>
+    <h2>🛡 Security Header Checker</h2>
+    <p>Enter a URL (e.g., google.com) to check its basic security headers.</p>
+    
+    <form action="/check" method="POST">
+        <label for="url">URL:</label>
+        <input type="text" id="url" name="url" placeholder="example.com">
+        <input type="submit" value="Check Headers">
+    </form>
+</body>
+</html>
